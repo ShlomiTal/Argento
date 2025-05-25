@@ -1,0 +1,8 @@
+services:
+  - name: argento-pwa-frontend
+    buildCommand: npm run build
+    startCommand: npm run preview
+    env:
+      NODE_ENV: production
+      VITE_API_URL: https://argento-backend-production.up.railway.app
+    port: 3000
