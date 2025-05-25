@@ -1,8 +1,0 @@
-services:
-  - name: argento-pwa
-    buildCommand: npm run build
-    startCommand: npm run preview
-    env:
-      NODE_ENV: production
-      VITE_API_URL: ${API_URL} # Define in Railway dashboard
-    port: 3000
