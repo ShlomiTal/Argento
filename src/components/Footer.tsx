@@ -10,7 +10,7 @@ const FooterContainer = styled.footer`
 function Footer() {
   return (
     <FooterContainer>
-      <p>&copy; 2025 Argento. All rights reserved.</p>
+      <p>© 2025 Argento. All rights reserved.</p>
     </FooterContainer>
   );
 }
