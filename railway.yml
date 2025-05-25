@@ -7,4 +7,4 @@ services:
       VITE_API_URL: https://argento-backend-production.up.railway.app
     static: true
     staticDir: dist
-    port: 8080
+    port: 3000
