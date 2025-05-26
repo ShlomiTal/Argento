@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import './styles/global.css';
-import { registerSW } from './serviceWorker';
+import { registerSW } from './serviceworker';
 
 
 const port = process.env.PORT || 8080;
