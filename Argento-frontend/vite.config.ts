@@ -13,8 +13,8 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       workbox: {
-        globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
-        globIgnores: ['**/node_modules/**/*', 'sw.js', 'workbox-*.js'],
+        globPatterns: ['**/*'], // Simplified to avoid glob warning
+        globIgnores: ['**/node_modules/**/*'],
       },
       includeAssets: ['favicon.ico', 'assets/icons/*.png'],
       manifest: {
