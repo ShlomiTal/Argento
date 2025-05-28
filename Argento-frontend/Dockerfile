@@ -13,6 +13,8 @@ RUN cat /app/public/index.html || echo "Failed to read index.html"
 RUN npm run build
 # Copy public/index.html to dist/
 RUN mkdir -p dist && cp public/index.html dist/
+# Debug dist/ contents
+RUN echo "Listing /app/dist contents:" && ls -la /app/dist/
 RUN npm install -g serve
 EXPOSE 3000
 CMD ["serve", "-s", "dist", "-l", "3000"]
